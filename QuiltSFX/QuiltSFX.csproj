@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5923E965-AB74-497B-A122-B53DF1D272E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuiltSFX</RootNamespace>
+    <AssemblyName>QuiltSFX</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>QuiltSFX.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="DotNetZip, Version=1.15.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.15.0\lib\net40\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\ConfigManager.cs" />
+    <Compile Include="Enumeration.cs" />
+    <Compile Include="Example\ExampleStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\ExampleStub.Designer.cs">
+      <DependentUpon>ExampleStub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewFileComparer.cs" />
+    <Compile Include="SDK\Akatsukible.cs" />
+    <Compile Include="SDK\BinaryResource.cs" />
+    <Compile Include="SDK\ResourceMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SDK\ResourceMaker.Designer.cs">
+      <DependentUpon>ResourceMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\ConsoleStub.cs" />
+    <Compile Include="Stub\Shield\Background.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\Shield\Background.Designer.cs">
+      <DependentUpon>Background.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\Shield\ShieldStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\Shield\ShieldStub.Designer.cs">
+      <DependentUpon>ShieldStub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\SplashStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\SplashStub.Designer.cs">
+      <DependentUpon>SplashStub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\Splash\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\Splash\PasswordForm.Designer.cs">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSound.cs" />
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Version.cs" />
+    <Compile Include="VersionSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionSetting.Designer.cs">
+      <DependentUpon>VersionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Link\SFXLibrary.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stub\InstallStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\InstallStub.Designer.cs">
+      <DependentUpon>InstallStub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\NoWindow\NoWindowStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\NoWindow\NoWindowStub.Designer.cs">
+      <DependentUpon>NoWindowStub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\Simple\LicenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\Simple\LicenseForm.Designer.cs">
+      <DependentUpon>LicenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\OnePageInstallStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\OnePageInstallStub.Designer.cs">
+      <DependentUpon>OnePageInstallStub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\Simple\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\Simple\PasswordForm.Designer.cs">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stub\Simple\SimpleStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stub\Simple\SimpleStub.Designer.cs">
+      <DependentUpon>SimpleStub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="SFXMaker.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Stub\NoWindow\NoWindowStubResource.resources" />
+    <None Include="Stub\Simple\SimpleStubResource.resources" />
+    <EmbeddedResource Include="Stub\InstallStub.resx">
+      <DependentUpon>InstallStub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stub\OnePageInstallStub.resx">
+      <DependentUpon>OnePageInstallStub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stub\Shield\Background.resx">
+      <DependentUpon>Background.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stub\Shield\ShieldStub.resx">
+      <DependentUpon>ShieldStub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stub\SplashStub.resx">
+      <DependentUpon>SplashStub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionSetting.resx">
+      <DependentUpon>VersionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Execute.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Stub\Console\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\gg.png" />
+    <None Include="Resources\TestIcon.png" />
+    <None Include="Resources\Profile.png" />
+    <None Include="Resources\Beast Tamer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

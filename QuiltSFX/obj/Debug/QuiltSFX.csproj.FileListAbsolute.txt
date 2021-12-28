@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.MainForm.resources
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.Properties.Resources.resources
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\bin\Debug\QuiltSFX.exe.config
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\bin\Debug\QuiltSFX.exe
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\bin\Debug\QuiltSFX.pdb
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\bin\Debug\DotNetZip.dll
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\bin\Debug\DotNetZip.pdb
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\bin\Debug\DotNetZip.xml
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.csproj.CopyComplete
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.exe
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.pdb
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.AboutForm.resources
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\bin\Debug\Link\SFXLibrary.cs
+C:\Users\USER\source\repos\QuiltSFX\QuiltSFX\obj\Debug\QuiltSFX.VersionSetting.resources
